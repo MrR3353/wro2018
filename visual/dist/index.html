@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+	<title>WRO</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="menu">
+            <div class="menu_content">
+                <div class="field_size">
+                    <label>Field size: </label>
+                    <label for="x">X = </label>
+                    <input type="number" id="x" class="coord" placeholder="0" min=0 max=10>
+
+                    <label for="y">Y = </label>
+                    <input type="number" id="y" class="coord" placeholder="0" min=0 max=10>
+                </div>
+
+                <div class="cheat">
+                    <label for="cheat">Cheat mode</label>
+                    <input id="cheat" type="checkbox">
+                </div>
+
+                <div class="dump_reset">
+                    <input id="dump" type="button" value="Dump">
+                    <input id="reset" type="button" value="Reset">
+                </div>
+            </div>
+
+            <span class="close"></span>
+
+            <div class="menu_drug_and_drop">
+                    <div class="robots_icon">
+                        <div class="robot eva_robot">
+                            <div class="left_wheel"></div>
+                            <div class="right_wheel"></div>
+                            <div class="r_wheel"></div>
+                            <div class="l_wheel"></div>
+                            <div class="input"></div>
+                            <div class="block">EVA</div>
+                            <div class="strip_one"></div>
+                            <div class="strip_two"></div>
+                            <div id="number_of_boxes">0</div>
+                        </div>
+                        <div class="robot rob_robot">
+                                <div class="left_wheel"></div>
+                                <div class="right_wheel"></div>
+                                <div class="r_wheel"></div>
+                                <div class="l_wheel"></div>
+                                <div class="input"></div>
+                                <div class="block">ROB</div>
+                                   <div class="strip_one"></div>
+                                <div class="strip_two"></div>
+                                <div id="number_of_boxes">0</div>
+                        </div>
+                        
+                        <div class="box_container">
+                            <div class="box"></div>
+                            <div class="u_box"></div>
+                        </div>
+                    </div>
+
+                    <div class="eva_alpha">
+                            <label for="eva_alpha">Eva alpha -</label>
+                            <select id="eva_alpha">
+                                <option value="0">0</option>
+                                <option value="90">90</option>
+                                <option value="180">180</option>
+                                <option value="270">270</option>
+                            </select>
+                             
+                    </div>
+                    <div class="rob_alpha">
+                            <label for="rob_alpha">Rob alpha -</label>
+                            <select id="rob_alpha">
+                                <option value="0">0</option>
+                                <option value="90">90</option>
+                                <option value="180">180</option>
+                                <option value="270">270</option>
+                            </select>
+                             
+                    </div>
+            </div>
+        </div>
+
+
+        <!-- Default field !-->
+
+        <div>
+            <h1>Field</h1>
+            <div class="field field_default"></div>
+             
+        </div>
+        <div class="robots">
+            <div class="robot_ex">
+                <!-- ====== EVA FIELD ====== !-->
+                <h1>EVA</h1>
+                <div class="field field_eva"></div>
+            </div>
+
+            <div class="robot_ex">
+                <!-- ====== ROB FIELD ====== !-->
+                <h1>ROB</h1>
+                <div class="field field_rob"></div>
+
+            </div>
+        </div>
+    </div>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
